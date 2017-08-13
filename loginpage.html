@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Mess Allotment</title>
-	<link href="entireframework.min.css" type="text/css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+	<title>Webmail Login</title>
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link href="entireframework.min.css" type="text/css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body style="background:url('http://bgfons.com/uploads/lines/lines_texture1091.jpg');">
 <style type="text/css">
-	h1{
+		h1{
 		text-align: center;
 		font-size: 190%;
 		font-family: "Roboto Slab";
@@ -23,8 +22,7 @@
 	.heading{
 		background-color: #000;
 	}
-	
-.msg
+	.msg
 {
 font-size: 140%;
 line-height: 40px;
@@ -32,14 +30,28 @@ border:0.5px solid gray;
 }
 .btn-sm
 {
-	font-size: 105%;
+	font-size: 100%;
 	box-shadow: 7px 7px 3.5px #888888;
 	border-radius:15px;
+width: 18em;
+text-align: center;
 }
 .nav
 {
 	border-radius: 5px;
 	
+}
+div.centerto{
+	text-align: center;
+	font-size: 140%;
+}
+input{
+	font-size: 20px;
+	border-radius: 3px;
+}
+input[type=password]
+{
+	-webkit-appearance:none;width:20em;
 }
 footer
 {
@@ -64,17 +76,27 @@ footer
   </div>
 
 </nav>
-
 <div class="msg">
-<strong>Choose Your Messes now!</strong> You can choose your own mess in your desired order of preference. Based on the availability and on first-come first-served basis you'll be assigned a new mess.
-<br><br>
-<a class="btn btn-c btn-sm smooth">Set Mess Preferences</a>
+<div class="centerto">
+<strong id="loginhead">Webmail Login</strong>
 </div>
-<div class="msg">
-<strong>Mess Details:</strong>
+<table align="center" border="1">
+<form action="" method="POST">
+<tr>
+<td><input type="text" name="roll" class="smooth" placeholder="Roll Number" required></td>
+</tr>
+<tr>
+<td><input type="password" name="password" class="smooth" placeholder="Webmail or Octa password" required></td>
+</tr>
 
+</form>
+</table>
+<table align="center">
+<tr>
+<td><a class="btn btn-a btn-sm smooth">Log In</a></td>
+</tr>
+</table>
 </div>
-
 <footer>
 	Website maintained by spider<br>
 	
